@@ -1,0 +1,57 @@
+/* 
+.bg {
+    background-color: #bfe6ff;
+} */
+
+/* body {
+    background-color: #e6e6e6;
+}
+.bg {
+    background-color: black;
+    color: white;
+} */
+
+/* .bg2 {
+    background-color: blue;
+    color: white;
+} */
+
+/* .color {
+    background-color: grey;
+} */
+
+/* .font1 {
+    font-size: 20px;
+} */
+.full-width {
+    margin: 0;
+    padding: 0;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+p {
+    font-size: large;
+    font-weight: 400;
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.length {
+    width: 200px;
+    height: 120px;
+}

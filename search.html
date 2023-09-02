@@ -1,0 +1,2225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Facts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48;
+            color: white;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myCard div").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                })
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold fs-4 fst-italic" href="#">#FACTS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ENTERTAINMENT
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="art.html">ART &amp; DESIGN</a></li>
+                            <li><a class="dropdown-item" href="celebrities.html">CELEBRITIES</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">FASHION AND BEAUTY</a></li>
+                            <li><a class="dropdown-item" href="film.html">FILM &amp; TV</a></li>
+                            <li><a class="dropdown-item" href="language.html">LANGUAGE &amp; LITERATURE</a></li>
+
+                            <li><a class="dropdown-item" href="sports.html">SPORTS &amp; GAMES</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SCIENCE &amp; NATURE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="animals.html">ANIMALS</a></li>
+                            <li><a class="dropdown-item" href="environment.html">ENVIRONMENT</a></li>
+                            <li><a class="dropdown-item" href="food.html">FOOD &amp; DRINK </a></li>
+                            <li><a class="dropdown-item" href="health.html">HEALTH &amp; BODY</a></li>
+                            <li><a class="dropdown-item" href="life.html">LIFE &amp; LOVE</a></li>
+                            <li><a class="dropdown-item" href="math.html">MATH</a></li>
+                            <li><a class="dropdown-item" href="physics.html">PHYSICS</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            WORLD &amp; HISTORY
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="business.html">BUSINESS &amp; ECONOMY</a></li>
+                            <li><a class="dropdown-item" href="crime.html">CRIME &amp; LAW </a></li>
+                            <li><a class="dropdown-item" href="history.html">HISTORY</a></li>
+                            <li><a class="dropdown-item" href="holiday.html">HOLIDAY &amp; EVENTS</a></li>
+                            <li><a class="dropdown-item" href="religion.html">RELIGION </a></li>
+                            <li><a class="dropdown-item" href="travel.html">TRAVEL &amp; TOURISM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="search.html" class="material-symbols-outlined text-decoration-none text-white me-3">search</a>
+
+            </div>
+        </div>
+    </nav>
+    <!--container-->
+    <div class="container-fluid full-width bg-info bg-opacity-25 py-5 pt-5 pb-5 border-bottom border-primary border-4">
+        <div class="row mx-2">
+            <div class="col-6 ">
+                <span class=" fs-1 fw-bold ">Search results</span>
+            </div>
+
+            <div class="col-6 ">
+                <div class="card ">
+                    <div class="card-body">
+                        <input class="py-2 w-100  ps-3" type="search" id="myInput"
+                            placeholder="If you didn't find what you were looking for, try a new search!"
+                            aria-label="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--first row-->
+    <div class="container-fluid  mt-5" id="myCard">
+
+        <div class="row">
+            <div class="col-12 ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="blackcolor.html" class=" text-black  link">
+                            <img src="images/black.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Shady Facts About The Color Black</h5>
+                            <p class="card-text">The color black has always had a bad
+                                reputation
+                                for being associated
+                                with dark, evil, even suspicion. While that might be true in some cases, the color
+                                black
+                                has never failed to stay in fashion. Uncover the mysteries that surround it by
+                                reading
+                                these 20 shady facts.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="whitecolor.html" class=" text-black  link">
+                            <img src="images/white.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class=" card-title">20 Wonderful Facts
+                                About
+                                The color White</h5>
+                            <p class="card-text">The color white is linked
+                                to cleaniness, purity,
+                                weddings,
+                                and so
+                                much
+                                more. Often forgotten about as a color, this color has so much going for it, and we
+                                are
+                                here to prove it with these 20 wonderful facts about the color white. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 ">
+                <div class="card mb-3">
+                    <div class="card-body"><a href="michelangelo.html" class="text-black link">
+                            <img src="images/david.jpg" class="card-img-top float-start me-3 length">
+
+                            <h5 class="card-title">10 Magnificent Facts About Michelangelo</h5>
+                            <p class="card-text">Michelangelo was born March 6, 1475, and died
+                                February 18, 1564. He is
+                                one of the most influential sculptors of all time and is most famed for this art in
+                                the
+                                Sistine Chapel. Let's unravel the fascinating story of Michelangelo with these ten
+                                fun
+                                facts.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card mb-3 ">
+                    <div class="card-body"><a href="christmas.html" class="text-black link">
+                            <img src="images/christmas.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Why Are Red And Green The Colors Of Christmas?
+                            </h5>
+                            <p class="card-text">We all know that the colors red and green are
+                                famously associated with
+                                Christmas. Many of us wonder how they came to be and it's easy to think of Coca-Cola
+                                and
+                                Santa and holly berries of Christmas trees but what are the true origins. Let's take
+                                a
+                                closer look.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card mb-3 ">
+                    <div class="card-body"><a href="monalisa.html" class="text-black link">
+                            <img src="images/monalisa.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">5 Fascinating Facts About Mona Lisa</h5>
+                            <p class="card-text">Mona Lisa has to be the more recognizable works
+                                of art ever created. It
+                                is displayed at the Le louvre Gallery in Paris which attracted many art lovers
+                                everyday.
+                                Let's take a look at what makes this piece of art so special.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card mb-3">
+                    <div class="card-body"><a href="sculptures.html" class=" text-black  link">
+                            <img src="images/sculptures.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">The World's Teeniest Tiny Sculptres</h5>
+                            <p class="card-text">We all enjoy going to
+                                museums and art galleries,
+                                but some works of art
+                                aren't clearly visible to the naked eye. One of those artists is Willard Wigan who
+                                creates some of the world's smallest sculptures using grains of rice! Let's look
+                                deeper
+                                at this incredible art form. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card mb-3 ">
+                    <div class="card-body"><a href="scottish.html" class="text-black link">
+                            <img src="images/scottish.jpg" class="card-img-top float-start me-3 length ">
+                            <h5 class="card-title">A Brief History Of The Scottish kilt
+                            </h5>
+                            <p class="card-text">
+                                The Kilt is a knee-length primarily skirt worn by
+                                men and boys. The
+                                Kilt dates back to the 16th century looked quite different from how
+                                we know
+                                it
+                                today.
+                                Join us as we tae a step back in time and look at the history of the
+                                kilt.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="lana.html" class=" text-black  link">
+                            <img src="images/lana.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title" style="height: 10%;">20 Astonishing Facts You Didn't Know About
+                                Lana
+                                Del Rey</h5>
+                            <p class="card-text">Lana Del Rey was born Elizabeth Woolridge Grant
+                                on June 21, 1985, in
+                                Manhattan, New York City, US. She rose to fame thanks to her sad music paired with
+                                her
+                                60s fashion vibes. Here are 3 0facts about moel and singer Lana Del Rey.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="tomholland.html" class=" text-black  link"><img
+                                src="images/tomholland.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title" style="height: 10%;">15 Terrific Facts About Tom Holland That You
+                                Didn't Know</h5>
+                            <p class="card-text" style="height:0%;">Tom Holland was born on June 1, 1996, making his
+                                Zodiac sign a Gemini.
+                                he's most famously known for playing Spider-Man, but did you know that he took
+                                hip-hop
+                                dance classes at Nifty Feet Dance School as akid? If you can't get enough of this
+                                outstanding actor, you'll love these 15 facts about him.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="jonathan.html" class=" text-black  link"> <img src="images/jonathan.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">18 Intriguing Facts About Jonathan banks</h5>
+                            <p class="card-text">
+                                American actor Jonathan Banks who played Michael Ehrmantraut in Breaking Bad and
+                                Better
+                                Call Saul was born January 31, 1947, in Washington, D.C. Banks has also starred in
+                                many
+                                blockbuster movies and loves playing the villain. Here are 18 cool facts about him.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="chuck.html" class=" text-black  link"> <img src="images/chuck.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Real Facts About Chuck Norris</h5>
+                            <p class="card-text">Chuck Norris is well known the world over his
+                                martial arts. He is well
+                                known for appearing in countless famous acction movies since the 1980s and has built
+                                a
+                                huge wealth from acting and running a business. Here are 100 incredible Chuck Norris
+                                facts!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="nestor.html" class=" text-black  link">
+                            <img src="images/nestor.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">23 Remarakable Facts About Nestor Carbonell
+                            </h5>
+                            <p class="card-text">Nestor Carbonell, born December 1, 1967, in New
+                                York, is an American
+                                actor who's probably most famed for this role as Richard Alpert in the TV series
+                                Lost.
+                                If you're a fan of his, then you'll love these 23 remarakable facts all about him.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="steve.html" class=" text-black  link"> <img src="images/steve.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Inspiring Facts About Steve Jobs</h5>
+                            <p class="card-text">Steve Jobs (February 24, 1955 - October 5, 2011)
+                                was an American
+                                business magnate who is most famous for creating Apple Inc. His love for computing
+                                and
+                                technology bought us the iPhone, iPad, Apple Watch, and so much more. Here are 15
+                                facts
+                                about Steve Jobs.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="scottish.html" class=" text-black  link"> <img
+                                src="images/scottish.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">A Brief History Of The Scottish kilt</h5>
+                            <p class="card-text">The Kilt is a knee-length primarily skirt worn by
+                                men and boys. The
+                                Kilt dates back to the 16th century looked quite different from how we know it
+                                today.
+                                Join us as we tae a step back in time and look at the history of the kilt.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="louis.html" class=" text-black  link"> <img src="images/louis.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">11 Interesting Facts About Louis Vuitton</h5>
+                            <p class="card-text">Louis Vuitton is a luxury fashion house that
+                                started back in 1854 by
+                                33-year-old Louis Vuitton in Paris. LV was able to target wealthy individuals due to
+                                working with Napoleon's wife, Empress Josephine. To learn more, keep reading these
+                                11
+                                interesting facts about Louis Vuitton!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="fashiontrends.html" class=" text-black  link"> <img
+                                src="images/fashion.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">7 Loved and Forgotten Fashion Trends</h5>
+                            <p class="card-text">Fashion changes season by season, year on year,
+                                and even over the
+                                decades. some Become Classics and are here to stay, while others are a sudden craze
+                                and
+                                then forgotten. Here are just seven previously loved but now forgotten fashion
+                                trends
+                                from years gone by.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="moschino.html" class="text-black link"> <img
+                                src="images/moschino.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">8 Marvellous facts About Moschino</h5>
+                            <p class="card-text">Moschino is a high-end luxury Italian fashion
+                                brand that Franco
+                                Moschino founded in 1983. The Headquarters are in Milan, and the creative director
+                                is
+                                Jeremy Scott. Yet, the brand we love almost never happened. To find out why, be sure
+                                to
+                                check out these eight marvelous Moschino facts.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="patagonia.html" class=" text-black  link"> <img
+                                src="images/patagonia.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Inspiring Facts About Patagonia</h5>
+                            <p class="card-text">A brand that has changed how shoppers and
+                                clothing companies view their
+                                environmental impact, Patagonia has become a company that has expanded beyond its
+                                original intention of outdoor clothing and equipment. Here are 20 facts about
+                                Patagonia.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="kenzo.html" class=" text-black  link"> <img src="images/kenzo.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">8 Cool Facts About Kenzo</h5>
+                            <p class="card-text">The luxury fashion brand Keno was founded by the
+                                late Japanese fashion
+                                designer Kenzo Takada in 1970 in Paris, France. Known for their bold, eclectic
+                                designs,
+                                Kenzo plays a vital role in the fashion world. Here are eight cool Kenzo facts that
+                                you
+                                might not know. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="charmeleon.html" class=" text-black  link"> <img
+                                src="images/charmeleon.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Fast Facts About The Charmeleon | Pokemon
+                            </h5>
+                            <p class="card-text">Charmeleon is one of the most famous fire-type
+                                Pokemon. It's renowned
+                                for its fiery temper and dominant nature. This fire-breathing lizard is capable of
+                                serious damage and scaring any opponent. Here are 20 fast facts about Charmeleon.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="interstellar.html" class=" text-black  link"> <img
+                                src="images/interstellar.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Interesting Facts About The Movie
+                                Interstellar</h5>
+                            <p class="card-text">Interstellar is an award-winning movie directed
+                                by Christopher Nolan in
+                                2014. The film was known for the fantastic visuals, great acting, and staying as
+                                scientifically accurate as possible. But did you know that there's more behind this
+                                awe-inspiring movie? Keep reading to learn more!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="marvel.html" class=" text-black  link"> <img src="images/marvel.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Impressive Facts About Captain Marvel</h5>
+                            <p class="card-text">After getting her big debut in the Marvel
+                                cinematic universe in 2019,
+                                Captain Marvel has continued to rise in popularity with comic book lovers and casual
+                                moviegoers alike. Here are more impressive facts about the heroine that will make
+                                you
+                                love her more!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class=" col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="mice.html" class=" text-black  link"> <img src="images/mice.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">8 Mind Blowing Facts About Of Mice and Men</h5>
+                            <p class="card-text">Of Mice and Men is a classic piece of literature
+                                written by
+                                John
+                                Steinbeck in 1937. It follows the story of George and Lennie in their work
+                                at the ranch.
+                                It is a timeless tale of life and liberty. Here are 8 facts you probably
+                                didn't know.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="jonathan.html" class="text-black link"><img
+                                src="images/jonathan.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">25 Intriguing Facts About Jonathan Banks</h5>
+                            <p class="card-text">American actor Jonathan Banks playing Michael
+                                Ehrmantraut in
+                                Breaking
+                                Bad and Better Call Saul was born January 31, 1947, in Washington, D.C. Banks
+                                has also
+                                starred in many blockbuster movies and loves playing the villain.Here are 25
+                                facts about
+                                him.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="hulk.html" class=" text-black  link"> <img src="images/hulk.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Incredible Facts About The Hulk</h5>
+                            <p class="card-text">The Hulk is a Marvel superhero, and he was first
+                                seen in "The
+                                Incredible Hulk" comic, which was released in May 1962. Back then, The Hulk
+                                wasn't even
+                                green! To find out about this superhero, check these ten astonishing facts about
+                                The
+                                Hulk.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="marvel.html" class=" text-black  link"> <img
+                                src="images/marvel.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Impressive Facts About Captain Marvel</h5>
+                            <p class="card-text">After getting her big debut in the Marvel
+                                cinematic universe in 2019,
+                                Captain Marvel has continued to rise in popularity with comic book lovers and casual
+                                moviegoers alike. Here are more impressive facts about the heroine that will make
+                                you
+                                love her more!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="mice.html" class=" text-black  link"><img src="images/mice.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">8 Mind Blowing Facts About Of Mice and Men</h5>
+                            <p class="card-text">Of Mice and Men is a classic piece of literature
+                                written by John
+                                Steinbeck in 1937. It follows the story of George and Lennie in their work at the
+                                ranch.
+                                It is a timeless tale of life and liberty. Here are 8 facts you probably didn't
+                                know.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="ironman.html" class=" text-black  link"> <img
+                                src="images/ironman.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Usual Facts About Iron Man</h5>
+                            <p class="card-text">Iron Man is a superhero within the Marvel
+                                Universe. His ebut was in the
+                                comic called "Tales od Suspense" back in 1963, and in 1968 he got his first
+                                standalone
+                                comic! Iron Man is now one of the best-known superheroes in the world. Here are ten
+                                unusual Iron Man facts!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="superman.html" class=" text-black  link"> <img
+                                src="images/superman.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Speedy Facts About Superman</h5>
+                            <p class="card-text">Superman is a fictional superhero, and he was
+                                trademarked by DC Comics
+                                back in 1938 makiing his debut in DC Comics "Action comics #1." He may have many
+                                powers
+                                but also has a few flaws. Learn more about this superhuan with these 10 speedy
+                                Superman
+                                facts.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="dictionary.html" class=" text-black  link"> <img
+                                src="images/dictionary.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">How Does A Word Get Into The Dictionary?</h5>
+                            <p class="card-text">Have you ever wondered how a word is added to the
+                                English dictionary?
+                                Is there ne person who says "yes" or "no" to the new words? How does it all work? We
+                                are
+                                about to answer all these questions as we look at how words are entered into the
+                                dictionary.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="winnie.html" class=" text-black  link"> <img
+                                src="images/winnie.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Wonderful Facts About Winnie The Pooh</h5>
+                            <p class="card-text">Winnie the Pooh is such a classic and iconic
+                                bear. He was born in 1926
+                                and tells us all the beautiful tales of his adventures on Hundred Acre Wood in
+                                England.
+                                But where did this loveable bear come from? Sit back, relax and let's delve into
+                                this
+                                bears history together.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <a href="charmeleon.html" class=" text-black  link">
+                        <div class="card-body"> <img src="images/charmeleon.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Fast Facts About The Charmeleon | Pokemon
+                            </h5>
+                            <p class="card-text">Charmeleon is one of the most famous fire-type
+                                Pokemon. It's renowned
+                                for its fiery temper and dominant nature. This fire-breathing lizard is capable of
+                                serious damage and scaring any opponent. Here are 20 fast facts about Charmeleon.
+                            </p>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="playstation.html" class=" text-black  link"> <img
+                                src="images/playstation.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Amazing Facts about Sony's PlayStation 3
+                            </h5>
+                            <p class="card-text">In 2005, the new PlayStation 3 by Sony was
+                                announced at the E3
+                                Convention. Although it didn't do so well when it frst got released, it changed the
+                                landscape for gaming consoles. So whether you're into games or not, you should check
+                                out
+                                these amazing facts about the PS3.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="icehockey.html" class=" text-black  link"> <img src="images/icehockey.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Freezingly Fascinating Facts About Ice
+                                Hockey</h5>
+                            <p class="card-text">Ice Hockey has always been known to be a
+                                fast-paced sport. People of
+                                all ages have loved it for years. You may already know some of the basics, but
+                                there's
+                                more to it than its icy surface. Here are 10 fascinating facts about ice hockey.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="mario.html" class=" text-black  link"> <img src="images/mario.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">7 Super Facts About Nintendo's Mario </h5>
+                            <p class="card-text">Mario is undoubtedly th emost iconic gaming
+                                character belonging to
+                                Nintendo. He was created by a Japenese video game designer Shigeru Miyamoto, and we
+                                first saw him in the early 80s. Here are some super cool facts all about the little
+                                guy
+                                we know you'll love! </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="running.html" class=" text-black  link"> <img
+                                src="images/running.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">11 Interesting Facts About Running</h5>
+                            <p class="card-text">Runnig in humans is an evolutionary trait that
+                                has helped us survive by
+                                escaping harm and catching food. Today running is all about sports, exercise, and
+                                ditness, and we are constantly pushing the boundaries of human potential. Check out
+                                these 11 facts about running.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="video.html" class=" text-black  link"><img src="images/video.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Interesting Facts About Your Favourite Video
+                                Games</h5>
+                            <p class="card-text">Video games bring great pleasure and joys to
+                                millions of people all
+                                over the world. There are many different consoles and games that cover an array of
+                                genres for all ages and abilities. We've put together an ultimate list of 20
+                                interesting facts about your all-time favourite video games. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="axolotl.html" class=" text-black  link"> <img
+                                src="images/axolotl.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Fantastic Facts About Axolotls</h5>
+                            <p class="card-text">Have you ever seen an axolotl in real life? With
+                                their tiny size and
+                                constantly smiling faces, it's no wonder many people keep the as pets. But before
+                                you go
+                                out and get one, read up on ten fantastic facts about these adorable amphibians!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="dinosaur.html" class=" text-black  link"> <img
+                                src="images/dinosaur.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Fun Facts About Dinosaurs That'll Blow Your
+                                Mind</h5>
+                            <p class="card-text">Dinosaurs roamed Earth as far back as over 230
+                                million years ago. There
+                                are incredibly over 90 species identified so far, and that list is expected to grow.
+                                Take a step back intime with us as we discover dinosaurs with these 20 facts! </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="elephant.html" class=" text-black  link"><img
+                                src="images/elephant.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Are Elephants Really Scared of Mice?</h5>
+                            <p class="card-text">We've all seen a cartoon or drawing showing an
+                                elephant extremely
+                                scared of a mouse. But is there any truth behind it? Let's uncover the actual score
+                                with
+                                elephants and mice an dhow the myth behind their relationship happened! Keep
+                                reading!
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="astronaut.html" class=" text-black  link"><img
+                                src="images/astronaut.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Animals That Have Visited Space Infographic
+                            </h5>
+                            <p class="card-text">Animals were fired off into the skies on
+                                spacecrafts long before humans
+                                were. They were a way of checking the safety of humans making those trips. this
+                                Infographic shows some of thee most famous space animals of all time.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="bobcat.html" class=" text-black  link"> <img src="images/bob.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Fun Facts About Bobcats For Kids</h5>
+                            <p class="card-text">Bobcats' official name is Lynx rufus, and they
+                                are native to North
+                                America. Although they may onlu be slightly larger than house cats, they have unique
+                                characteristics. Here are 15 fun and interesting facts all about bobcats.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="fox.html" class=" text-black  link"> <img src="images/fox.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Noise Does A Fox Make?</h5>
+                            <p class="card-text">Have you ever wondered what sound foxe make? I
+                                don't know about you,
+                                but they certainly sound scary to my ears. But what does it actually mean, and do
+                                they
+                                make any other noises besides their screams? let's take a closer look and find out
+                                once
+                                and for all. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="sunflower.html" class=" text-black  link"> <img
+                                src="images/sunflower.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Why Do Sunflowers Face The Sun?</h5>
+                            <p class="card-text">Sunflowers are known for their majestic yellow
+                                petals. if you have seen
+                                one in person, you will notice and maybe even wonder why they always seem to be
+                                facing
+                                the sun. Well wonder no more beacuse today, we're talking about why these
+                                magnificient
+                                flowers are constantly chasing the sun.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="polarbear.html" class=" text-black  link"> <img
+                                src="images/polarbear.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">The Mass Polar Bear Invasion Of Russia</h5>
+                            <p class="card-text">In 2019 a state of emergency was called by
+                                Arkhangelsk Oblast
+                                authorities in the northern islands of Novaya Zemlya, Russia, after dozens of polar
+                                bears invaded the area. Polar bears are rarely seen in Russia, but sightings have
+                                become
+                                more frequent as climate change destroys their natural habitat.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="thunder.html" class=" text-black  link"> <img
+                                src="images/thunder.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Causes Thunder And Lightning</h5>
+                            <p class="card-text">There's something magnificient and spectacular
+                                about witnessing a
+                                thunderstorm. As the sky lights up with shocks of lightning, we then anticipate the
+                                thunderous sound that comes shortly after. Did you ever wonder what causes thunder
+                                and
+                                lightning? Let's take a closer look.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="oldtree.html" class=" text-black  link"> <img src="images/oldtree.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">7 Oldest Trees In The World</h5>
+                            <p class="card-text">Trees play an important role on Earth. Without
+                                them, life here wouldn't
+                                be possible. Some trees on Earth are the oldest organisms on our planet and show no
+                                sign
+                                of dynig any time soon. Keep reading to check out ceven of the oldest trees in the
+                                world. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="earthquake.html" class=" text-black  link"> <img
+                                src="images/earthquake.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Causes An Earthquake?</h5>
+                            <p class="card-text">When two blocks of the earth underground collide
+                                they create an energy
+                                release on the earth's surface known as an Earthquake. These events can cause
+                                incredible
+                                destruction and cost many lives. Let's go into a little more depth on what causes
+                                earthquakes to shake the earth.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="rainbow.html" class=" text-black  link"> <img src="images/rainbow.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Is The Color Pink In The Rainbow?</h5>
+                            <p class="card-text">There is something really magical about seeing a
+                                beautiful arched
+                                rainbow spread across the sky during rain and sun. We all know that all the colors
+                                are
+                                in
+                                a rainbow.... but are they? If your answer is still "yes", then let me ask you,
+                                where's
+                                pink? Here we'll find out whether pink is in the rainbow or not.>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="garlic.html" class=" text-black  link"> <img
+                                src="images/garlic.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Pungent Facts About Garlic</h5>
+                            <p class="card-text">Garlic is notorious for being pungent and almost
+                                unbearably stinky for
+                                some people. But some people just love adding it to make their food tastier, and we
+                                can't blame them! It doesn't matter if you're a fan or not; you should keep reading
+                                to
+                                know more garlic facts!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="krispy.html" class=" text-black  link"> <img
+                                src="images/krispy.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">11 Sweet Facts About Krispy Kreme</h5>
+                            <p class="card-text">Krispy Kreme doughnuts have been an American icon
+                                since they opened in
+                                1937. It's hard to deny the allure of their glazed doughnuts. But what else is there
+                                aside from their sweet and indulgent pastry? Keep on reading to know more about
+                                Krispy
+                                Kreme and their irresistible treats. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="wasabi.html" class=" text-black  link"> <img
+                                src="images/wasabi.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Hot Facts About Wasabi</h5>
+                            <p class="card-text">Wasabi is well-known for its reputation of being
+                                spicy while
+                                complimenting any sushi there is. Studies show that this hot vegetable was first
+                                consumed by people in 14,000 BC and what cultivated during the Edo period in
+                                Japan.
+                                Here are ten hot facts about Wasabi.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="tacobell.html" class=" text-black  link"> <img
+                                src="images/tacobell.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Mildly Spicy facts About Taco Bell</h5>
+                            <p class="card-text">Taco Bell is most known for its burritos and Baja
+                                Blast, but they're
+                                also infamous for "buying" the Liberty Bell as an April Fool's prank. Hate them or
+                                love
+                                them, Taco Bell has popularized the Mexican-inspired food that we all know and enjoy
+                                today.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="chickfila.html" class=" text-black  link"> <img
+                                src="images/chickfila.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">100 Cheerful Facts About Chick-Fil-A</h5>
+                            <p class="card-text">Chick-fil-A has built a huge following thanks to
+                                their tasty chicken
+                                burger. Together wth their lemonade and waffle fries, it's not hard to see why
+                                people
+                                keep coming back for more tasty and mouthwatering facts about this beloved fastfood
+                                chain.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="vegetable.html" class=" text-black  link"> <img
+                                src="images/vegetable.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Are The 10 Healthiest Vegetables?</h5>
+                            <p class="card-text">Having a healthy balanced diet is crucial for a
+                                long healthy life. of
+                                course, fresh vegetables should make up the bulk of any healthy meal, but which ones
+                                are
+                                the healthiest? Check out our ten most nutritious vegetables that you should be
+                                eating.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="metabolism.html" class=" text-black  link"> <img src="images/metabolism.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Is Metabolism?</h5>
+                            <p class="card-text">We often hear about how our metabolism plays an
+                                important role, but are
+                                you also aware of how crucial it is for our health, digestion, and detoxification?
+                                Here
+                                you'll learn about how your metabolism works, what it is, and why it's important.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="tonsils.html" class=" text-black  link"> <img
+                                src="images/tonsils.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Do You Really Need Tonsils?</h5>
+                            <p class="card-text">Tonsillities and tonsillectomies are actually
+                                pretty common among
+                                children. If you didn't get your tonsils removed as a child, you probably know
+                                someone
+                                who did. But What do your tonsils actually do, and can you go without them? Keep
+                                reading
+                                to uncover the mystery surrounding this infamous body part.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="laughing.html" class=" text-black  link"> <img
+                                src="images/laughing.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Health Benefits of Laughing</h5>
+                            <p class="card-text">The act of laughing is incredibly good for the
+                                body and mind. Not only
+                                is it beneficial to the person laughing, but it also has a positive impact on those
+                                nearby. Here are ten incredible health benefits of laughing that you'll be happy to
+                                know!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="medical.html" class=" text-black  link"> <img
+                                src="images/medical.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">8 Old Medical Practices That Did More Than Good
+                            </h5>
+                            <p class="card-text">Many medical practices that were designed to help
+                                us have actually
+                                caused more harm than good in times gone by. From eating human corpse bone powder to
+                                swallowing heavy metals, here are some old medical practices you'll be glad you
+                                missed
+                                out on!</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="vegetable.html" class=" text-black  link"> <img src="images/vegetable.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Are The 10 Healthiest Vegetables?</h5>
+                            <p class="card-text">Having a healthy balanced diet is crucial for a
+                                long healthy life. Of
+                                course, fresh vegetables should make up the bulk of any healthy meal, but which ones
+                                are
+                                the healthiest? Check out our ten most nutritious that you should be eating.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="running.html" class=" text-black  link"> <img
+                                src="images/running.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">11 Interesting Facts about Running</h5>
+                            <p class="card-text">Running in humans is an evolutionary trait that
+                                has helped us survive
+                                by escaping harm and catching food. Today running is all abou tsports, exercise and
+                                fitness, and we are constantly pushing the boundaries of human potential. Check out
+                                these 11 facts about running. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="satan.html" class=" text-black  link"> <img src="images/satan.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Sinister Facts About Satan</h5>
+                            <p class="card-text">Satan is a destructive force of evil. He is well
+                                known across several
+                                cultures around the world, and he is even mentioned within the Bible. But how much
+                                do
+                                you know about Satan? We've unearthed ten sinister facts all about him.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="butterflies.html" class=" text-black  link"> <img src="images/butterflies.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Are Butterflies In The Stomach?</h5>
+                            <p class="card-text">One of th body's mysterious functions is that of
+                                the butterflies you
+                                feel in the pit of your stomach. This feeling happens to pretty much everyone out
+                                there.
+                                Did you ever wonder what the cause is or why it might happen? Let's take a closer
+                                look
+                                together. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="love.html" class=" text-black  link">
+                            <img src="images/love.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Is Love?</h5>
+                            <p class="card-text">What is "love"? For such a small word, it sure
+                                has a deep-rooted
+                                connection with almost everything across the world. There's a scientific explanation
+                                for
+                                a lot of things, including this powerful yet intangible feeling!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="heart.html" class=" text-black  link"> <img src="images/heart.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Can You Die From A Broken Heart? </h5>
+                            <p class="card-text">Sometimes, life hits you where it hurts and you
+                                are so sad, it feels
+                                like the world is ending. Well cheer up, beacuse it could kill you! Although rare,
+                                it
+                                can, and has happened. here we're going to see how exactly you</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="kissing.html" class=" text-black  link"> <img
+                                src="images/kissing.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">9 Electrifying Facts About Kissing That You'll
+                                Love</h5>
+                            <p class="card-text">Like anything else, there's more beneath the
+                                surface about kissing,
+                                like health benefits, origins of etymology, and the science of kissng. Read on to
+                                learn
+                                about many peoples favourite hobby - you're sure to find out a fact or two that you
+                                never heard before!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="day.html" class=" text-black  link"><img src="images/day.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">5 Ways To Make Your Day Last Longer</h5>
+                            <p class="card-text">Despite the fact that everyone knows that a day
+                                has 24 hours, an hour
+                                has 60 minutes, and a minute has 60 seconds, etc.., our sense of time is individual,
+                                and
+                                it can change during the day and during parts of our lifetime. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="number32.html" class=" text-black  link"> <img src="images/32.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">32 Fast FActs About The Number 32</h5>
+                            <p class="card-text">The number 32 might not be the most popular, but
+                                musicians and sports
+                                associations are big fans! Aside from being mentioned a lot in the music industry,
+                                this
+                                number also plays a significant role in histpry and human anatomy.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="number7.html" class=" text-black  link"> <img
+                                src="images/number-7-facts.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Superb Facts About The Number 7</h5>
+                            <p class="card-text">The Number 7 can be linked to many areas of the
+                                world around us,
+                                including numerology, supersitition, important holidays, and much more. While the
+                                number
+                                7 may be a small number, it's also a pretty fascinating one! We've dug deep to find
+                                ten
+                                fun and interesting facts about the number 7. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="number8.html" class=" text-black  link"> <img
+                                src="images/number-8-facts.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Fun Facts About The Number 8</h5>
+                            <p class="card-text">The number 8 can be found in all areas of the
+                                world around us
+                                including, numerology, mathematics, superstition, hobbies, astronomy, and so much
+                                more.
+                                Did you know that 8 is the luckiest number in Chinese culture? Find out more these
+                                ten
+                                fun facts about the number 8.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="number11.html" class=" text-black  link"> <img
+                                src="images/number-11.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">11 Fun Facts About The Number 11</h5>
+                            <p class="card-text">The number 11 can be attributed to many areas in
+                                life around us,
+                                including numerology, superstition, hostorical dates, and more. Discover why the
+                                number
+                                11 is significant with these eleven incredibly fascinating facts about the number
+                                11.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="number14.html" class=" text-black  link"> <img src="images/number-14-facts.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">14 Interesting Facts Abiut The Number 14</h5>
+                            <p class="card-text">The number 14 is incredibly prevalent in many
+                                areas of the world around
+                                us. This number can be attributed to numerology, special holidays, superstition,
+                                sports,
+                                law, and more. Learn how special this number is with these fourteen facts about the
+                                number 14.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="number9.html" class=" text-black  link"> <img
+                                src="images/number-9.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Fun Facts About The Number 9</h5>
+                            <p class="card-text">The Number 9 may be a small number, but it
+                                certainly packs a punch.
+                                This number can be attributred to many areas of the world around us including,
+                                numerology, superstition, language, film, and more. Here are ten incredible facts
+                                all
+                                about the number 9.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="electricity.html" class=" text-black  link"> <img
+                                src="images/electricity.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Is Electricity?</h5>
+                            <p class="card-text">Electricity has been around for hundreds of years
+                                thanks to scientists
+                                and inventors like Thomas Edison, Nikola Tesla, and Benjamin Franklin. If it weren't
+                                for
+                                them, we wouldn;t get to enjoy the gadgets we own and drive electric cars. But how
+                                does
+                                it really power up our homes? Keep on reading to shine a light on what electricity
+                                is.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="thunder.html" class=" text-black  link"> <img
+                                src="images/thunder.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Causes Thunder And Lightning?</h5>
+                            <p class="card-text">There's something magnificent and spectacular
+                                about witnessing a
+                                thunderstorm. As the sky lights up with shocks of lightning, we then anticipate the
+                                thunderous sound that comes shortly after. Did you ever wonder what causes thunder
+                                and
+                                lightning? Let's take a closer look. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="rainbow.html" class=" text-black  link"> <img src="images/rainbow.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Is The Color Pink In The Rainbow?</h5>
+                            <p class="card-text">There is something really magical about seeing a
+                                beautiful arched
+                                rainbow spread across the sky during rain and sun. We all know that all the colors
+                                are
+                                in
+                                a rainbow.... but are they? If your answer is still "yes", then let me ask you,
+                                where's
+                                pink? Here we'll find out whether pink is in the rainbow or not.></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="gravity.html" class=" text-black  link"> <img
+                                src="images/gravity.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Is Gravity?</h5>
+                            <p class="card-text">Ah gravity, the thing that keeps the world
+                                together, literally. But
+                                what would happen if there was no gravity? What would happen to us? Is there gravity
+                                on
+                                other planets and underwater too? Let's delve deeper into thiss fascinating topic
+                                all
+                                about the weird world of gravity.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="blackhole.html" class=" text-black  link"> <img
+                                src="images/blackhole.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Happens If A Person Goes Into A Black
+                                Hole?</h5>
+                            <p class="card-text">Many of us wonder what would happen if someone
+                                was to go into a black
+                                hole. The answer to this question is far more fascinating than you could imagine.
+                                Hold
+                                on tight as we take an in-depth look at what would happen if you found yourself
+                                stepping
+                                inside one!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="magnets.html" class=" text-black  link"> <img
+                                src="images/magnets.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">The Magic Hostory of Fridge Magnets</h5>
+                            <p class="card-text">Fridge magnets come in all kinds of shapes, colo
+                                our fridge in magnets
+                                w've collected on our travels around the world, while others like to write messsages
+                                with letter magnets. But when did fridge magnets become popular, and why?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="money.html" class=" text-black  link"> <img src="images/money.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Facts About Money That won't Make You Rich
+                            </h5>
+                            <p class="card-text">Money has been known to be the root of all evil.
+                                But is that true? We
+                                always hear that cash is king, but there's more to it than meets the eye. So keep on
+                                reading to know ten facts about your hard-earned cash.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="hashtag.html" class=" text-black  link"> <img src="images/hashtag.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">9 Facts About The Hashtag That You Didn't Know
+                            </h5>
+                            <p class="card-text">It's crazy to think the hashtag that we use today
+                                has only been around
+                                since 2007! Yet, almost all social media platforms utilize this handy little symbol.
+                                But
+                                what do you really know about it? Well, here are nine cool #facts all about the
+                                hashtag.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="reddit.html" class=" text-black  link"> <img src="images/reddit.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">A Brief history Of Reddit</h5>
+                            <p class="card-text">In 2005 Steve Huffman and Alexis Ohanian founded
+                                Reddit in
+                                Massachusetts. Although the site was slow to get started, it is now the world's
+                                largest
+                                online forum with over a million subreddit communities. Find out more with this
+                                brief
+                                history about Reddit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="steve.html" class=" text-black  link">
+                            <img src="images/steve.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Inspiring Facts About Steve Jobs</h5>
+                            <p class="card-text">Steve Jobs (February 24, 1955 - October 5, 2011)
+                                was an American
+                                business magnate who is most famous for creating Apple Inc. His love for computing
+                                and
+                                technology bought us the iPhone, iPad, Apple Watch, and so much more. Here are 15
+                                facts
+                                about Steve Jobs.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="wendy.html" class=" text-black  link"> <img src="images/wendy.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Interesting Facts About Wendy's</h5>
+                            <p class="card-text">Wendy's is one of the world's biggest fast-food
+                                restaurants. It all
+                                began in 1969 when the first restaurant opened in Columbus, Ohio. If you're a fan of
+                                the
+                                company and their delicious hamburgers, then you'll love these top 10 bitesize facts
+                                about Wendy's!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="tiktok.html" class=" text-black  link"> <img
+                                src="images/tiktok.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Tip-Top Facts About Tiktok</h5>
+                            <p class="card-text">Tiktok is a video-sharing app that's taken the
+                                world by storm. It was
+                                released back in 2016 and has had huge success. The app is geared toward
+                                lip-syncing,
+                                dancing, and singing so why not chck out these 10 tip-top facts about TikTok you
+                                probably didn't know.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="criminal.html" class=" text-black  link"> <img
+                                src="images/criminal.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">7 Criminals Who Could Still Be Out There Today
+                            </h5>
+                            <p class="card-text">While many of the most dangerous people around
+                                are locked up behind
+                                bars, some of the m ost infamous criminals couls still be at large out in the
+                                commmunity
+                                - meaning an attack could happen at any moment. Here are 7 such persons to look out
+                                for!
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="ripper.html" class=" text-black  link"> <img src="images/ripper.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Why Was Jack the Ripper, Really?</h5>
+                            <p class="card-text">Jack the Ripper wasn't the first serial killer,
+                                but he was the first
+                                case to stir up a worldwide media frenzy. Over 100 years later, we all know his
+                                nickname
+                                and the mystery of thesse attacks are and the mystery of these aataks are
+                                scruntinized.
+                                But the million-dollar question: Who was Jack the Ripper?</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="movie.html" class=" text-black  link"> <img src="images/movie.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Shocking Movies Based on Real Crimes</h5>
+                            <p class="card-text">True crimes stories are fascinating to learn
+                                about in order
+                                to get in
+                                the head of some demented people. But sometimes we don't want to spend hours
+                                doing
+                                research online to learn about them. Here we have a list of 10 movies you
+                                can watch
+                                based on real events!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="amsterdam.html" class=" text-black  link"> <img
+                                src="images/amsterdam.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">The Weird History of the Amsterdam Eel Riots
+                            </h5>
+                            <p class="card-text">Amsterdam is known for a lot of things-great
+                                nightlife,
+                                impressive
+                                museums, beautiful canals, and so much more. But there's a strange story that
+                                happened
+                                in this quirky city regarding a riot that started overe a strange game played
+                                among the
+                                locals. Check out this bizarre piece of Dutch history!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="crimescene.html" class=" text-black  link"><img
+                                src="images/crime.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">Which State Produces The Most Serial Killers?
+                            </h5>
+                            <p class="card-text">Worried you'll be a victim of the next Charles
+                                Manson? Find out
+                                where
+                                you're safest - and where you're not. Of course, living in fear is never a good
+                                thing
+                                but sometimes it doesn't hurt to know the facts! So which state produces the
+                                most serial
+                                killers and why? find out! </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="rise.html" class=" text-black  link"> <img src="images/rise.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">The Rise of Artificial Intelligence in Law
+                                Infographic</h5>
+                            <p class="card-text">As one of the few industries that is slow on
+                                adopting
+                                technological
+                                advancements, the legal profession unsurprisingly is debating on whether to
+                                implement
+                                one of the biggest advancements in today's technological age - Artifical
+                                Intelligence.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="victoria.html" class=" text-black  link"> <img src="images/victorianera.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Weird Things People Did During The Victorian
+                                Era</h5>
+                            <p class="card-text">The Victorian era was named after UK's Queen
+                                Victoria. It lasted from
+                                1837 to 1901. We know the period consisted of beautiful dresses, but they also
+                                paired
+                                them with hats with taxidermied birds. Keep reading for more weeird things people
+                                did
+                                during this time.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="dinosaur.html" class=" text-black  link"> <img src="images/dinosaur.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">20 Fun Facts About Dinosaurs That'll Blow Your
+                                Mind</h5>
+                            <p class="card-text">Dinosaurs roamed Earth as far back as over 230
+                                million years ago. There
+                                are incredibly over 900 species iddentified so far, and that list is expected to
+                                grow.
+                                Take a step back in time with us as we discover dinosaurs with these 20 facts!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="yakuza.html" class=" text-black  link"><img src="images/yakuza.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">8 Mind-Blowing Facts About The Yakuza</h5>
+                            <p class="card-text">The Yakuza has always been featured as gangsters
+                                with many tattoos on
+                                popular media. but what do we really know about these countries-old factions? For
+                                one,
+                                being a memmber of the Ykuza isn't illegal. Keep reading to learn more mind-blowing
+                                facts about them.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="independence.html" class=" text-black  link"> <img
+                                src="images/independence.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Interesting Facts About Independence Day
+                            </h5>
+                            <p class="card-text">Independence Day, or the 4th of July, has always
+                                been synonymous with
+                                fireworks, celebrations, and parades. But aside from watching fireworks and enjoying
+                                a
+                                barbecue with friends and family, what do we really know about the holiday? Keep
+                                reading
+                                to learn facts about Independence Day to Impress your friends!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="queen.html" class=" text-black  link"> <img src="images/queen.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Incredible Powers That The Queen Of England
+                                Has</h5>
+                            <p class="card-text">Being the Queen of the UK definitely has a lot of
+                                perks. She can
+                                command the British Armed Forces, travek with no need for a passport, and even has
+                                two
+                                different celebrations! Which of these powers would you want to have the most?</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="ninja.html" class=" text-black  link"> <img src="images/ninja.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">8 Strange Facts About Ninjas</h5>
+                            <p class="card-text pb-4">We often think of ninjas when someone mentions Japan. But you
+                                would be
+                                surprised to know that real ninjas are far from the depiction of them in modern
+                                comics,
+                                films, and literature. Here are 8 strange facts about ninjas that you didn't know.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="independence.html" class=" text-black  link"><img src="images/independence.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Interesting Facts About Independence Day
+                            </h5>
+                            <p class="card-text">Independence Day, or the 4th of July, has always
+                                been synonymous with
+                                fireworks, celebrations, and parades. But aside from watching fireworks and enjoying
+                                a
+                                barbecue with friends and family, what do we really know about the holiday? Keep
+                                reading
+                                to learn facts about Independence Day to Impress your friends!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="ferris.html" class=" text-black  link"> <img
+                                src="images/ferris.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">National Ferris Wheel Day | February 14</h5>
+                            <p class="card-text">National Ferris Wheel Day occurs every year on
+                                February 14th. The
+                                Ferris wheel is a thrill ride found in theme parks all around the world, which dates
+                                back to 1893. To find out more about this memorable holiday and how to take part, be
+                                sure to keep on reading. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="merry.html" class=" text-black  link"> <img src="images/merry.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Jolly Facts About Christmas Day</h5>
+                            <p class="card-text">Christmas Day is the most celebrated holiday in
+                                the world. Falling on
+                                December 25 every year, it's celebrated by over 2 billion people across 160
+                                countries.
+                                This special day is about friends and loved ones, gifting, and appreciating what you
+                                already have. Here are ten facts you didn't know baout Christmas Day.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="pfeffernusse.html" class="text-black link"> <img
+                                src="images/pfeffernusse.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">National Pfeffernusse Day | December 23</h5>
+                            <p class="card-text">Pfeffernusse Day falls on December 23 every year.
+                                This festive cookie
+                                is a family favourite for Germans, Dutch, Danish, and many other European families.
+                                This
+                                holiday being so close to Christmas makes it the perfect day to prepare these to
+                                gift
+                                guests on Christmas Day.</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="christ.html" class=" text-black  link"> <img
+                                src="images/christ.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Are The 12 Days of Christmas?</h5>
+                            <p class="card-text">The Twelve Days of christmas is a classic
+                                Christmas song by Frederic
+                                Austin in the 1780s. Of course, we all know what all this popular festive song, but
+                                do
+                                you know what all the twelve days are and what they all mean? Keep on reading to
+                                find
+                                out. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="reindeer.html" class=" text-black  link"> <img
+                                src="images/reindeer.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">9 Interesting Facts About Santa's Reindeer</h5>
+                            <p class="card-text">Santa's reindeer are one of the most iconic
+                                traditions during the
+                                Christmas festivities. The reindeer are known to help Santa get gifts to every child
+                                in
+                                the world over Christmas Eve. But what else do you know about them? Here are nine
+                                interesting facts about Santa's reindeer. </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="christ.html" class=" text-black  link"> <img
+                                src="images/christ.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">What Are The 12 Days of Christmas?</h5>
+                            <p class="card-text">The Twelve Days of christmas is a classic
+                                Christmas song by Frederic
+                                Austin in the 1780s. Of course, we all know what all this popular festive song, but
+                                do
+                                you know what all the twelve days are and what they all mean? Keep on reading to
+                                find
+                                out. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body"> <a href="easter.html" class=" text-black  link"> <img
+                                src="images/easter.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Exciting Facts About Easter Sunday</h5>
+                            <p class="card-text">Easter Sunday has got to be one of the best days
+                                of the year, other
+                                than Christmas, of course! Have you ever wondered about the day itelf, though? It
+                                turns
+                                out there's much more to Easter Sunday than you would think! Check out these
+                                interesting
+                                Easter Sunday facts!</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <a href="satan.html" class=" text-black  link">
+                        <div class="card-body"> <img src="images/satan.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Sinister Facts About Satan</h5>
+                            <p class="card-text">Satan is a destructive force of evil. He is well
+                                known across several
+                                cultures around the world, and he is even mentioned within the Bible. But how much
+                                do
+                                you know about Satan? We've unearthed ten sinister facts all about him. </p>
+                    </a>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="adam.html" class=" text-black  link"> <img src="images/adameve.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">10 Interesting facts About Adam and Eve</h5>
+                            <p class="card-text">We've all heard the story of Adam and Eve.
+                                According to the Bible, they
+                                were the first people on the planet. They ate the forbidden fruit and were banished
+                                from
+                                the Garden of Eden. Here are 10 interesting facts About adam and Eve that you might
+                                not
+                                have known before.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="FLDs.html" class=" text-black  link"> <img src="images/fld.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Fascinating Facts About The FLDS</h5>
+                            <p class="card-text">The FLDS have been in the spotlight mianly for
+                                their practice of
+                                polygamy- when a man marries multiple women at once. With multiple TV shows being
+                                aired,
+                                and books being launched about this religious group, it's time to get to know them
+                                more.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12   ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="saint.html" class=" text-black  link"> <img src="images/saint.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">16 Lucky Facts About Saint Patrick's Day</h5>
+                            <p class="card-text">Saint Patrick's Day has come to be one of the
+                                best drinking holidays of
+                                the year! While this holiday wasn't popularized by Ireland, Saint Patrick himself
+                                isn't
+                                even an Irishman. Even so, the history behind this mysterious saint is fascinating.
+                                Find
+                                out where he was actually from, and loads more!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="oklahoma.html" class=" text-black  link"> <img src="images/oklahoma.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Monumental Facts about Oklahoma</h5>
+                            <p class="card-text">Oklahoma was the 46th state to join the United
+                                States of America on
+                                November 16, 1907. The region was first inhabitred by Paleo-Indians over 11,000
+                                years ag
+                                and has changed hands many times since. Here are 15 incrediblr facts about the state
+                                of
+                                Oklahoma.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="ohio.html" class=" text-black  link"> <img src="images/ohio.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Outstanding Facts About Ohio</h5>
+                            <p class="card-text">Ohio was the 17th state to join the United States
+                                of America 1803.
+                                Humans have lived in the region for over 13,000 years, and the state played a
+                                pivotal
+                                role in the American Civil War. So let's take a closer look at Ohio with these 15
+                                incredible facts. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="northdakota.html" class=" text-black  link"> <img src="images/northdakota.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Remarkable Facts About North Dakota</h5>
+                            <p class="card-text">North dakota was the 39th state to join the
+                                United States of America on
+                                November 2, 1889. The first to arive at the area was 10,000 years ago by the
+                                Paleo-Indians. North Dakota has a rich and varied story; here are 15 incredible
+                                facts
+                                about it.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--next-->
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="carolina.html" class=" text-black  link"><img src="images/carolina.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Notable Facts About North Carolina</h5>
+                            <p class="card-text">North Carolina ws the 12th state to join the
+                                United States of America
+                                on November 21, 1789. It's thought that the region has been inhabited for more than
+                                10,000 years. To explore what makes this state so unique, let's look at 15 amazing
+                                facts
+                                about North Carolina. </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <a href="mexico.html" class=" text-black  link"> <img src="images/mexico.jpg"
+                                class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Capitvating Facts About New Mexico</h5>
+                            <p class="card-text">New Mexico was the 47th state to join the United
+                                States of America on
+                                January 6, 1912. This state is the fourth-largest state in th US, and the area has
+                                been
+                                inhabited for more than 11,000 years. Find out more about incredible state with
+                                these 15
+                                New Mexico facts! </p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12  ">
+                <div class="card mb-3">
+                    <div class="card-body"> <a href="newyork.html" class=" text-black  link"> <img
+                                src="images/newyorkcity.jpg" class="card-img-top float-start me-3 length">
+                            <h5 class="card-title">15 Fascinating Facts About New York State</h5>
+                            <p class="card-text">New York was the 11th state to join the United
+                                States of America on
+                                July 26, 1788. Although only the 27th largest state, it is the fourth most
+                                populated.
+                                Here we're going to look at some interesting facts about New York.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid full-width bg-black text-white mt-4">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-12  col-md-6 col-lg-4 col-xl-4  pt-5">
+                    <h4 class="fw-bold fs-2 fst-italic">#FACTS</h4>
+                    <p>The Fact is the number one source for the most interesting &amp; random facts about
+                        animals,
+                        celebrities, food, films, games &amp; so much more. You wll learn something about
+                        everything!
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 pt-5">
+                    <h5>POPULAR FACTS LIST</h5>
+                    <div class="mt-4 lh-lg">
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="environment.html" title="ENVIRONMENT">ENVIRONMENT</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="celebrities.html" title="CELEBRITIES">CELEBRITIES</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="fashion.html" title="FASHION &amp; BEAUTY">FASHION &amp; BEAUTY</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white" href="film.html"
+                                title="FILM &amp; TV">FILM &amp; TV</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="language.html" title="LANGUAGE &amp; LITERATURE">LANGUAGE &amp; LITERATURE</a>
+                        </div>
+
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="sports.html" title="SPORTS &amp; GAMES">SPORTS &amp; GAMES</a></div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 pt-5">
+                    <h5>POPULAR PAGES</h5>
+                    <div class="mt-4 lh-lg">
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white" href="life.html"
+                                title="LIFE &amp; LOVE">LIFE &amp; LOVE</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="environment.html" title="ENVIRONMENT">ENVIRONMENT</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="crime.html" title="CRIME &amp; LAW">CRIME &amp; LAW </a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="holiday.html" title="HOLIDAY &amp; EVENTS">HOLIDAY &amp; EVENTS</a></div>
+
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="animals.html" title="ANIMALS">ANIMALS</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="travel.html" title="TRAVEL &amp; TOURISM">TRAVEL &amp; TOURISM</a></div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-2  pt-5">
+                    <h5>FOLLOW US</h5>
+                    <div class="mt-4 lh-lg">
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="javascript:void" title="Instagram">Instagram</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="javascript:void" title="Facebook">Facebook</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="javascript:void" title="Twitter">Twitter</a></div>
+                        <div><a class="border-bottom border-white my-3 text-decoration-none text-white"
+                                href="javascript:void" title="Pinterest">Pinterest</a></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--copyright-->
+    <div class="container-fluid  bg-info bg-opacity-25">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <p class=" text-center pt-3"> &copy; 2023 The Facts | All Rights Reserved
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
